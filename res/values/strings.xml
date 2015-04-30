@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Flashlight</string>
+    <string name="flash_btn_off">Turn Flash on</string>
+    <string name="flash_btn_on">Turn Flash off</string>
+    <string name="flash_light_btn">flash light button</string>
+    <string name="no_flash_light">Sorry! No Flashlight detected.</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_close">Close</string>
+
+</resources>

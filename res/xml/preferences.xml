@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="com.example.flashlight.Flashlight"
+        android:entries="@array/lightArray"
+        android:entryValues="@array/lightValues"
+        android:key="lightPref"
+        android:summary="Which Light to use."
+        android:title="Lighttype Preference" />
+
+</PreferenceScreen>
