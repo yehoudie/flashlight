@@ -42,7 +42,6 @@ public class Main extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 		setTitle(R.string.app_name);
-		// getWindow().setBackgroundDrawableResource(R.drawable.autobahn);
 
 		context = getBaseContext();
 		has_flash_light = context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_FLASH);
@@ -123,6 +122,7 @@ public class Main extends Activity
 		// flash_light_btn.setTextAppearance(context, R.style.flash_btn_off);
 //		flash_light_btn.setBackgroundResource(R.color.button_bg_off);
 		flash_light_btn.setImageResource(R.drawable.ic_power_off);
+		
 	}
 
 	@SuppressWarnings("deprecation")
@@ -179,7 +179,6 @@ public class Main extends Activity
 		startActivity(intent);
 	}
 
-	@SuppressWarnings("deprecation")
 	private void releaseCam()
 	{
 		Log.d(TAG, "releaseCam: cam: " + cam + ", has_flash_light: " + has_flash_light);
@@ -221,8 +220,8 @@ public class Main extends Activity
 		Log.d(TAG, "onRestoreInstanceState: is_switched_on: " + is_switched_on);
 		if ( savedInstanceState == null ) return;
 		
-		is_switched_on =  savedInstanceState.getBoolean("is_switched_on", false);
-		Log.d(TAG, "onRestoreInstanceState: savedInstanceState(is_switched_on): " + is_switched_on);
+		is_switched_on = savedInstanceState.getBoolean("is_switched_on", false);
+//		Log.d(TAG, "onRestoreInstanceState: savedInstanceState(is_switched_on): " + is_switched_on);
 		if ( is_switched_on ) switchOn();
 	}
 

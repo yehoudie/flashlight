@@ -16,7 +16,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:padding="50sp"
-        android:contentDescription="@string/flash_light_btn"
-        android:src="@drawable/ic_power_off" />
+        android:contentDescription="@string/flash_light_btn" />
 
 </RelativeLayout>
